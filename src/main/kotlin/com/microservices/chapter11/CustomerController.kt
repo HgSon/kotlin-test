@@ -8,7 +8,7 @@ import java.util.concurrent.ConcurrentHashMap
 @RestController
 class CustomerController {
     companion object {
-        val initialCustomers = arrayOf(Customer(1, "kotlin"), Customer(2, "spring"), Customer(3, "microservice"))
+        val initialCustomers = arrayOf(Customer(1, "kotlin"), Customer(2, "spring"), Customer(3, "microservice"), Customer(4, "openshift"))
         val customers = ConcurrentHashMap<Int, Customer>(initialCustomers.associateBy(Customer::id))
     }
 
